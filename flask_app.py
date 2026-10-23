@@ -29,21 +29,15 @@ def accueil():
 
 @app.get("/presentation")
 
+
 @app.get("/presentation")
 def presentation():
-    return """
-    <h1>Nouha</h1>
-    <p>Je suis étudiante en <strong>informatique</strong>.</p>
+    return render_template(
+        "presentation.html",
+        prenom="Nouha",
+        nom="Martin"
+    )
 
-    <h2>Ce que j'aime</h2>
-    <ul>
-        <li>La musique</li>
-        <li>Les voyages</li>
-        <li>Le développement web</li>
-    </ul>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
-    """
 
 
 @app.get("/loisirs")
