@@ -44,6 +44,15 @@ def loisirs():
     return "Mes loisirs sont la musique, les voyages et le sport."
 
 
+@app.get("/bonjour/<prenom>")
+def bonjour(prenom):
+    return render_template(
+        "bonjour.html",
+        prenom=prenom
+    )
+
+
+
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
