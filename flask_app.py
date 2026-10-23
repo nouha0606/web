@@ -30,6 +30,10 @@ def presentation():
     return "Je m'appelle Nouha et je suis étudiante en informatique."
 
 
+@app.get("/loisirs")
+def loisirs():
+    return "Mes loisirs sont la musique, les voyages et le sport."
+
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
