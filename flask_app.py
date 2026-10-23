@@ -53,6 +53,16 @@ def bonjour(prenom):
         prenom=prenom
     )
 
+@app.get("/calcul")
+def calcul():
+    try:
+        a = int(request.args.get("a", 0))
+        b = int(request.args.get("b", 0))
+    except ValueError:
+        return "Veuillez entrer des nombres entiers valides.", 400
+
+    return f"{a} + {b} = {a + b}"
+
 
 
 # ---------------------------------------------------------------
