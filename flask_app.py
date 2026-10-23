@@ -35,7 +35,7 @@ def presentation():
     return render_template(
         "presentation.html",
         prenom="Nouha",
-        nom="Martin"
+        nom="Niri"
     )
 
 
