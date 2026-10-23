@@ -22,7 +22,6 @@ def accueil():
     return render_template("accueil.html")
 
 
-
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
