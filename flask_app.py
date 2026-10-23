@@ -7,7 +7,9 @@
 #  Vous allez le compléter petit à petit, exercice après exercice.
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
-from flask import Flask, render_template
+
+from flask import Flask, render_template, request
+
 
 
 app = Flask(__name__)
@@ -22,10 +24,10 @@ def accueil():
     return render_template("accueil.html")
 
 
+us 👇
 # ---------------------------------------------------------------
-#  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
-
+#  Ajoutez vos nouvelles routes ci-desso
 @app.get("/presentation")
 
 
